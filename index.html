@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saveiros do Brasil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <nav aria-label="Menu principal">
+      <h1>Saveiros do Brasil</h1>
+      <ul class="menu">
+        <li><a href="#historia">História</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção principal -->
+  <main>
+    <section class="hero" role="banner">
+      <h2>Patrimônio Cultural Marítimo</h2>
+      <p>Os saveiros são embarcações tradicionais, símbolos da cultura e do transporte no Recôncavo Baiano.</p>
+      <button onclick="scrollToSection('historia')">Saiba Mais</button>
+    </section>
+
+    <!-- História -->
+    <section id="historia" tabindex="0">
+      <h2>História dos Saveiros</h2>
+      <p>
+        Os saveiros surgiram como embarcações típicas da Bahia, utilizados principalmente no transporte
+        de mercadorias e passageiros pelas águas da Baía de Todos-os-Santos. São barcos à vela,
+        conhecidos pela elegância e resistência.
+      </p>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" tabindex="0">
+      <h2>Galeria</h2>
+      <div class="galeria">
+        <figure>
+          <img src="img/download.jpeg" alt="Saveiro branco">
+          <figcaption>Saveiro branco</figcaption>
+        </figure>
+        <figure>
+          <img src="img/images.jpeg" alt="Saveiro Com vidro fumê roxo">
+          <figcaption>Saveiro Com vidro fumê roxo</figcaption>
+        </figure>
+        <figure>
+          <img src="img/carro.jpeg" alt="Saveiro Rebaixada">
+          <figcaption>Saveiro Nova Rebaixada</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Curiosidades -->
+    <section id="curiosidades" tabindex="0">
+      <h2>Curiosidades</h2>
+      <ul>
+        <li>Foram declarados patrimônio imaterial pelo IPHAN.</li>
+        <li>Utilizam velas coloridas e de formatos tradicionais.</li>
+        <li>São usados até hoje em festas tradicionais, como a Regata dos Saveiros.</li>
+      </ul>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" tabindex="0">
+      <h2>Contato</h2>
+      <form aria-label="Formulário de contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required aria-required="true">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Saveiros do Brasil | Desenvolvido com acessibilidade</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
